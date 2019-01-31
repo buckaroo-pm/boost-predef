@@ -2,3 +2,10 @@ bin
 boost-build.jam
 project-config.jam
 *.pyc
+
+.buckd
+buck-out
+.buckconfig.local
+.buckconfig.d
+buckaroo
+buckaroo_macros.bzl
