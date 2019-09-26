@@ -1,0 +1,21 @@
+load("//buckaroo:defs.bzl", "buckaroo_deps")
+
+cc_library(
+  name = "predef",
+  includes = [
+    "include",
+  ],
+  hdrs = glob([
+    "include/**/*.hpp",
+    "include/**/*.h",
+    "include/**/*.ipp",
+    "include/**/*.inl",
+  ]),
+  srcs = glob([
+    "src/**/*.cpp",
+  ]),
+  deps = buckaroo_deps(),
+  visibility = [
+    '//visibility:public',
+  ],
+)
